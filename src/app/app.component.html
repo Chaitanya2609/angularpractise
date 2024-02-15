@@ -7,7 +7,7 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<style>
+<!-- <style>
   :host {
     --bright-blue: oklch(51.01% 0.274 263.83);
     --electric-violet: oklch(53.18% 0.28 296.97);
@@ -324,7 +324,7 @@
   </div>
 </main>
 
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<! * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
@@ -333,4 +333,23 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
-<router-outlet />
+<!-- <router-outlet /> -->
+<!-- <h1>Hello Angular!!! {{city}}</h1>
+
+@if (isServerRunning) {
+  <span> |||    Yes, the server is running    |||</span>
+  } @else {
+  <span>No, the server is not running !!!</span>
+  }
+ <!-- <h1><app-user></app-user></h1> -->
+
+ <!-- for  -->
+<!-- @for(user of users; track user.name) {
+  <p>{{ user.name }}</p>
+  }  -->
+<app-navigation></app-navigation>
+<app-concept></app-concept>
+<router-outlet></router-outlet>
+<app-child></app-child>
+<app-forms></app-forms>
+<button (click)="btn_click()"></button>

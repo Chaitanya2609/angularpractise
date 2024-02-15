@@ -1,0 +1,13 @@
+:host {
+  font-style: italic;
+}
+:host(.active) {
+  font-weight: bold;
+}
+b{
+  color: crimson;
+  font-size: x-large;
+}
+.b_name{
+  color: blue;
+}

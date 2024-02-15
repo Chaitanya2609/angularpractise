@@ -1,0 +1,20 @@
+<H2>FORMS COMPONENT</H2>
+
+<p>Username: {{ favoriteFramework }}</p>
+
+<p> <b>Favorite Framework: </b> {{ favoriteFramework }}</p>
+<label for="framework">
+  Favorite Framework:
+  <input id="framework" type="text" [(ngModel)]="favoriteFramework" />
+
+<br>
+  <button (click)="showFramework()">Show Framework</button>
+
+  <form [formGroup]="profileForm">
+    <h2 class="validating">Validating forms</h2>
+    <br>
+    <input type="text" formControlName="name" name="name" />
+    <input type="email" formControlName="email" name="password" />
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+  </form>
+</label>
